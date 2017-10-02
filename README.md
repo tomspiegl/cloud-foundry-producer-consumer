@@ -4,6 +4,13 @@ This example shows how to use the service discovery pattern using an Eureka serv
 
 ![Producer Service Discovery](producer-consumer-service-discovery.png)
 
+**Service Registry:** The producer registers with the Service Registry. The Producer (client) provides metadata about itself, such as its host and port.
+The Service Registry will call all application instances regularly to make sure the service is healthy (heartbeat).
+ 
+**Producer:** The Producer application increments and returns a counter on each call to its Rest controller.
+
+**Consumer:** Calls the Rest API of the Producer. Will use the Service Registry to discover a running Producer endpoint.
+
 ## Create Service Registry Instance
 
 Switch to target org space.
@@ -19,8 +26,6 @@ Links:
 * [Pivotal Docu - Service Registry for Pivotal Cloud Foundry](https://docs.pivotal.io/spring-cloud-services/1-3/common/service-registry/)
 
 ## Producer Application
-
-The Producer application increments and returns a counter on each call to it's Rest controller.
 
 To build and deploy the producer on Cloud Foundry type:
 
