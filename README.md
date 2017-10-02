@@ -34,9 +34,14 @@ Links:
 
 ## Container Networking  
 
+`cf add-network-policy box-consumer --destination-app box-producer --protocol tcp --port 1-65535`
+
+Current issue: `I/O error on GET request for "https://box-producer": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)] with root cause`
+
 Links
-* [Container Networking with Cloud Foundry PWS/PCF - PART1](https://medium.com/@christophef/container-networking-with-cloudfoundry-pws-pcf-part1-8840d7f9a985)
 * [Pivotal Docu - Understanding C2C Networking](https://docs.cloudfoundry.org/concepts/understand-cf-networking.html) 
+* [Pivotal- Docu - Understanding Application Security Groups](https://docs.pivotal.io/pivotalcf/1-11/concepts/asg.html)
+* [Container Networking with Cloud Foundry PWS/PCF - PART1](https://medium.com/@christophef/container-networking-with-cloudfoundry-pws-pcf-part1-8840d7f9a985)
 
 ## Producer Application
 
