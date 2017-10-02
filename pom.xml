@@ -12,6 +12,7 @@
     <name>Cloud Foundry - Producer/Consumer - Master</name>
 
     <modules>
+        <module>consumer</module>
         <module>producer</module>
 
     </modules>

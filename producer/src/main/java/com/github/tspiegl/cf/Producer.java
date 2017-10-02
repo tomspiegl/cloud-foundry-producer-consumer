@@ -17,7 +17,7 @@ public class Producer {
 
     @RequestMapping(value = "/", produces = "application/json")
     public String counter() {
-        return String.format("{\"counter\":%d}", counter.incrementAndGet());
+        return String.format("{\"producer-counter\":%d}", counter.incrementAndGet());
     }
 
     public static void main(String[] args) {
