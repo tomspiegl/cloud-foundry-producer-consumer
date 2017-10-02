@@ -2,7 +2,7 @@
 
 This example shows how to use the service discovery pattern using an Eureka services registry on Pivotal Cloud Foundry.
 
-![Producer Service Discovery](producer-consumer-service-discovery.png =690x277)
+![Producer Service Discovery](producer-consumer-service-discovery.png=690x277)
 
 ## Create Service Registry Instance
 
