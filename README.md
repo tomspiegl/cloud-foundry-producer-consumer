@@ -11,7 +11,7 @@ The Service Registry will call all application instances regularly to make sure 
 
 **Consumer:** Consumes the Rest API of the Producer. Uses the Service Registry to discover a running Producer endpoint.
 
-Here are the necessary steps to create a service registry, configure container networking and how to build and push the producer and consumer applications.
+Steps to create a service registry, configure container networking and how to build and push the producer and consumer applications:
 1. [Create Service Registry Instance](#create-service-registry-instance)
 1. [Producer Application](#producer-application)
 1. [Consumer Application](#consumer-application)
