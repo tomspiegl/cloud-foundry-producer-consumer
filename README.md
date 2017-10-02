@@ -35,7 +35,8 @@ Links:
 ## Container Networking  
 
 Links
-*[Container Networking with Cloud Foundry PWS/PCF - PART1](https://medium.com/@christophef/container-networking-with-cloudfoundry-pws-pcf-part1-8840d7f9a985) 
+* [Container Networking with Cloud Foundry PWS/PCF - PART1](https://medium.com/@christophef/container-networking-with-cloudfoundry-pws-pcf-part1-8840d7f9a985)
+* [Pivotal Docu - Understanding C2C Networking](https://docs.cloudfoundry.org/concepts/understand-cf-networking.html) 
 
 ## Producer Application
 
@@ -60,7 +61,7 @@ public class Producer {
 
     @RequestMapping(value = "/", produces = "application/json")
     public String counter() {
-        return String.format("{\"counter\":%d}", counter.incrementAndGet());
+        return String.format("{\"producer-counter\":%d}", counter.incrementAndGet());
     }
 
     public static void main(String[] args) {
