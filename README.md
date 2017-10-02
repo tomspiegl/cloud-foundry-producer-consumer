@@ -11,7 +11,7 @@ The Service Registry will call all application instances regularly to make sure 
 
 **Consumer:** Consumes the Rest API of the Producer. Uses the Service Registry to discover a running Producer endpoint.
 
-Steps to create a service registry and run the producer / consumer applications:
+Here are the necessary steps to create a service registry, configure container networking and how to build and push the producer and consumer applications.
 1. [Create Service Registry Instance](#create-service-registry-instance)
 1. [Container Networking](#container-networking)
 1. [Producer Application](#producer-application)
@@ -88,7 +88,7 @@ security:
 
 Disable the Rest Controller basic authentication (default in spring-boot-starter).
 
-## Consumer
+## Consumer Application
 
 ```
 $ cd consumer
