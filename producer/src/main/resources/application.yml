@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: box-producer
+  cloud:
+    services:
+      registrationMethod: direct
+
+security:
+  basic:
+    enabled: false

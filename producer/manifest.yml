@@ -1,0 +1,8 @@
+---
+applications:
+  - name: box-producer
+    instances: 1
+    path: target/producer-1.0-SNAPSHOT.jar
+    services:
+    - service-registry
+
